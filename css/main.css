@@ -1,4 +1,7 @@
 @charset "utf-8";
+html{
+
+}
 body{
     width: 100%;
     overflow-x: hidden;
@@ -449,15 +452,17 @@ nav .opening{
 }
 .illust1{
     width: 1327px;
-
+    z-index: 1;
 }
 .illust2{
     width: 1505px;
     margin-top: 200px;
+    z-index: 1;
 }
 .illust3{
     width: 1500px;
     margin-top: 300px;
+    z-index: 1;
 }
 
 /* web서식 */

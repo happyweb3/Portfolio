@@ -9,6 +9,15 @@
     <!-- 메인서식 -->
     <link rel="stylesheet" href="./css/main.css">
 
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 메인js -->
+    <script src="./script/main.js" defer></script>
+
+    <!-- 버튼서식 -->
+    <link rel="stylesheet" href="./css/btn.css">
+
     <!-- 레이아웃 -->
     <link rel="stylesheet" href="./css/layout.css">
 
@@ -17,6 +26,9 @@
 
     <!-- 벤더프리픽스 -->
     <script src="./script/prefixfree.min.js"></script>
+
+    <!-- 스크롤 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -54,10 +66,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
 <body>
+    <div class="btn_wrap">
     <div class="body_wrap">
     <header>
         <nav>
-            <div class="opening">
+            <div class="opening" id="opening">
                 <video src="./img/Test4.mp4" autoplay="autoplay" muted loop>
                 </video>
 
@@ -66,10 +79,27 @@
     </header>
 
     <main>
-        <article class="profile">
+
+        <div class="scroll-moveBox flex flex-br-c">
+        <article class="btn_bg">
+            <div class="btn_box">
+            <a href="#opening" class="scroll_move">Home</a>
+            <a href="#profile" class="scroll_move">Proflie</a>
+            <a href="#can" class="scroll_move">Can</a>
+            <a href="#video" class="scroll_move">Video</a>
+            <a href="#Reel" class="scroll_move">Reel</a>
+            <a href="#other" class="scroll_move">Other</a>
+            <a href="#illust" class="scroll_move">illust</a>
+            <a href="#rehau" class="scroll_move">Rehau</a>
+            <a href="#footer" class="scroll_move">Footer</a>
+            </div>
+        </article>
+        </div>
+
+        <article class="profile" id="profile">
             <h2>WHO AM I</h2>
             <div class="box01"></div>
-            <img src="./img/i.png" alt="my picture">
+            <!-- <img src="./img/i.png" alt="my picture"> -->
             <div class="p_txt">
             <p>이름 : 김기태<br>
                 나이 : 19세<br>
@@ -97,38 +127,38 @@
         </div>
         </article>
 
-        <article class="can">
+        <article class="can" id="can">
             <h2>I CAN DO</h2>
 
         <div class="can_img">
-            <img src="./img/AE.png" alt="" class="ae"><p class="ae_txt">After&nbsp;Effect</p>
-            <img src="./img/Ai.png" alt="" class="ai"><p class="ai_txt">Adobe&nbsp;illustrator</p>
-            <img src="./img/Me.png" alt="" class="me"><p class="me_txt">Media&nbsp;encoder</p>
-            <img src="./img/ID.png" alt="" class="id"><p class="id_txt">Indesing</p>
-            <img src="./img/Pr.png" alt="" class="pr"><p class="pr_txt">Premiere&nbsp;pro</p>
-            <img src="./img/Ps.png" alt="" class="ps"><p class="ps_txt">Photoshop</p> 
-            <img src="./img/C4D.png" alt="" class="c4d"><p class="c4d_txt">C4D</p>    
+            <img src="./img/AE.png" alt="" class="ae scroll_opacity0"><p class="ae_txt scroll_opacity0">After&nbsp;Effect</p>
+            <img src="./img/Ai.png" alt="" class="ai scroll_opacity0 delay1"><p class="ai_txt scroll_opacity0 delay1">Adobe&nbsp;illustrator</p>
+            <img src="./img/Me.png" alt="" class="me scroll_opacity0 delay2"><p class="me_txt scroll_opacity0 delay2">Media&nbsp;encoder</p>
+            <img src="./img/ID.png" alt="" class="id scroll_opacity0 delay3"><p class="id_txt scroll_opacity0 delay3">Indesing</p>
+            <img src="./img/Pr.png" alt="" class="pr scroll_opacity0 delay4"><p class="pr_txt scroll_opacity0 delay4">Premiere&nbsp;pro</p>
+            <img src="./img/Ps.png" alt="" class="ps scroll_opacity0 delay5"><p class="ps_txt scroll_opacity0 delay5">Photoshop</p> 
+            <img src="./img/C4D.png" alt="" class="c4d scroll_opacity0 delay6"><p class="c4d_txt scroll_opacity0 delay6">C4D</p>    
         </div>
 
         <h2 class="and_h2">AND</h2>
             
         <div class="and_img">
-            <img src="./img/vs.png" alt="" class="vs"><p class="vs_txt">Visual&nbsp;Studio</p>
-            <img src="./img/html.png" alt="" class="html"><p class="html_txt">Html</p>
-            <img src="./img/java.png" alt="" class="js"><p class="js_txt">JavaScript</p>
-            <img src="./img/css.png" alt="" class="css"><p class="css_txt">Css3</p>
-            <img src="./img/react.png" alt="" class="react"><p class="react_txt">React</p>
-            <img src="./img/jquery.png" alt="" class="jq"><p class="jq_txt">Jquery</p>     
-            <img src="./img/figma.svg" alt="" class="fg"><p class="fg_txt">Figma</p>
+            <img src="./img/vs.png" alt="" class="vs scroll_opacity0 delay7"><p class="vs_txt scroll_opacity0 delay7">Visual&nbsp;Studio</p>
+            <img src="./img/html.png" alt="" class="html scroll_opacity0 delay8"><p class="html_txt scroll_opacity0 delay8">Html</p>
+            <img src="./img/java.png" alt="" class="js scroll_opacity0 delay9"><p class="js_txt scroll_opacity0 delay9">JavaScript</p>
+            <img src="./img/css.png" alt="" class="css scroll_opacity0 delay10"><p class="css_txt scroll_opacity0 delay10">Css3</p>
+            <img src="./img/react.png" alt="" class="react scroll_opacity0 delay11"><p class="react_txt scroll_opacity0 delay11">React</p>
+            <img src="./img/jquery.png" alt="" class="jq scroll_opacity0 delay12"><p class="jq_txt scroll_opacity0 delay12">Jquery</p>     
+            <img src="./img/figma.svg" alt="" class="fg scroll_opacity0 delay13"><p class="fg_txt scroll_opacity0 delay13">Figma</p>
         </div>
 
 
         </article>
 
-        <article class="video">
+        <article class="video" id="video">
             <h2 class="video_title">VIDEO</h2>
             <div class="video_box">
-            <iframe width="1316" height="877" src="https://www.youtube.com/embed/DOjLyLkoZIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1316" height="757" src="https://www.youtube.com/embed/DOjLyLkoZIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div class="pannel">
@@ -153,7 +183,7 @@
             </div>
         </article>
 
-        <article class="reel">
+        <article class="reel" id="reel">
             <h2 class="reel_title">REEL</h2>
             <div class="reel_video">
                 <iframe width="1310" height="737" src="https://www.youtube.com/embed/2v3RgzBOTkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -171,7 +201,7 @@
             
         </article>
 
-        <article class="other">
+        <article class="other" id="other">
             <h2 class="other_title">Other Video</h2>
             <div class="other_video">
                 <a href="https://www.youtube.com/watch?v=9DMvcsPD0vw"><img src="./img/vd3.jpg" alt=""></a>
@@ -186,7 +216,7 @@
             </div>
         </article>
 
-        <article class="illust">
+        <article class="illust" id="illust">
             <h2 class="illust_title">Illustrator</h2>
             <img src="./img/graident.png" alt="" class="il_background">
             <img src="./img/illust1.jpg" alt="" class="illust1">
@@ -196,7 +226,7 @@
             
         </article>
 
-        <article class="web">
+        <article class="web" id="web">
             <h2 class="web_title">Front end web development<br>
                 (프론트 엔드 웹 개발)
                 
@@ -205,7 +235,7 @@
             <img src="./img/pc.jpg" alt="" class="rehau_pc">
             
 
-            <div class="rehau">
+            <div class="rehau" id="rehau">
         <div class="rehau_border">
             <img src="./img/pc2.png" alt="" class="rehau_img rehau_pc">
             <a href="https://happyweb3.github.io/rehau/" title="rehau">
@@ -287,7 +317,7 @@
     </main>
 
     <footer>
-        <div class="footer_box">
+        <div class="footer_box" id="footer">
             <p class="footer_txt">Mail : happywebae@naver.com
                 <br><br>
                 Phone : 010 4249 3666
@@ -302,6 +332,7 @@
             </a>
         </div>
     </footer>
+</div>
 </div>
 
 <script>
