@@ -8,12 +8,11 @@ body{
 }
 .body_wrap{
     width: 100%;
-    height: 15500px;
+    height: 15300px;
     background-color: #FAF6FF;
     z-index: -2;
 }
-.body_wrap{
-}
+
 *{z-index: 10;}
 nav .opening{
     width: 100%;
@@ -451,7 +450,7 @@ nav .opening{
     margin: 150px 0px 150px 0px;
 }
 .illust1{
-    width: 1327px;
+    width: 1300px;
     z-index: 1;
 }
 .illust2{
@@ -474,7 +473,7 @@ nav .opening{
     text-align: center;
     color: #435B74;
     font-family: 'Nanum Myeongjo', serif;
-    margin: 600px 0px 200px 0px;
+    margin: 300px 0px 200px 0px;
 }
 
 .rehau_logo{
@@ -639,7 +638,7 @@ nav .opening{
     width: 100%;
     height: 400px;
     background-color: #E6D4FE;
-    margin-top: 12800px;
+    margin-top: 12600px;
     position: relative;
 }
 .footer_txt{
@@ -647,6 +646,15 @@ nav .opening{
     position: absolute;
     top: 20%;
     left: 5%;
+}
+.footer_txt2{
+    font-size: 24px;
+    position: absolute;
+    top: 70%;
+    right: 3%;
+    text-align: right;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #425a73;
 }
 .footer_you{
     width: 150px;
