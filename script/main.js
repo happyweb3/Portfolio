@@ -48,7 +48,7 @@ $(document).ready(function(){
             $(".btn_bg").removeClass("btn_show")
         }
 
-        if($(window).scrollTop()>7732){
+        if($(window).scrollTop()>7244){
             $(".btn_bg").removeClass("btn_show")
         }
         if($(window).scrollTop()>11800){

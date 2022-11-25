@@ -8,7 +8,7 @@ body{
 }
 .body_wrap{
     width: 100%;
-    height: 15300px;
+    height: 14400px;
     background-color: #FAF6FF;
     z-index: -2;
 }
@@ -149,7 +149,8 @@ nav .opening{
     border-radius: 200px 200px 200px 200px;
     position: absolute;
     left: 25%;
-    transform: translateY(50px);
+    transform: translate(80px,135px);
+    width: 250px;
 }
 .profile .p_txt{
     position: absolute;
@@ -188,7 +189,7 @@ nav .opening{
     margin-top: 70px;
 }
 .can .can_img img{
-    width: 155px;
+    width: 105px;
 }
 .can h2{
     font-family: 'Itim', cursive;
@@ -200,36 +201,36 @@ nav .opening{
     width: 925px;
     display: flex;
     position: absolute;
-    transform: translate(-130px,190px);
+    transform: translate(-130px,150px);
     font-family: 'Itim', cursive;   
     font-size: 20px;
     color: #435B74;
 }
 .can .can_img .c4d{
-    height: 105px;
+    height: 75px;
     scale: 2;
     transform: translateY(10px);
 }
 .can .can_img .ae_txt{
-    left: 18%;
+    left: 17%;
 }
 .can .can_img .ai_txt{
-    left: 29%;
+    left: 28.4%;
 }
 .can .can_img .me_txt{
-    left: 41.5%;
+    left: 41.2%;
 }
 .can .can_img .id_txt{
     left: 54.8%;
 }
 .can .can_img .pr_txt{
-    left: 66%;
+    left: 66.5%;
 }
 .can .can_img .ps_txt{
-    left: 78.7%;
+    left: 79.2%;
 }
 .can .can_img .c4d_txt{
-    left: 92%;
+    left: 93%;
 }
 
 .can .and_img{
@@ -240,8 +241,8 @@ nav .opening{
     margin-top: 70px;
 }
 .and_img img{
-    width: 175px;
-    height: 175px;
+    width: 105px;
+    height: 105px;
 }
 .js{
     scale: 1.1;
@@ -254,7 +255,7 @@ nav .opening{
     transform: scaleX(1.1);
 }
 .jq{
-    transform: scaleY(0.8);
+    transform: scaleY(0.7);
 }
 .can .and_h2{
     margin-top: 110px;
@@ -263,7 +264,7 @@ nav .opening{
     width: 925px;
     display: flex;
     position: absolute;
-    transform: translate(-130px,210px);
+    transform: translate(-130px,150px);
     font-family: 'Itim', cursive;   
     font-size: 20px;
     color: #435B74;
@@ -271,25 +272,25 @@ nav .opening{
 
 
 .can .and_img .vs_txt{
-    left: 18%;
+    left: 16.7%;
 }
 .can .and_img .html_txt{
-    left: 32%;
+    left: 30.8%;
 }
 .can .and_img .js_txt{
-    left: 42.6%;
+    left: 42.2%;
 }
 .can .and_img .css_txt{
     left: 55.8%;
 }
 .can .and_img .react_txt{
-    left: 67.4%;
+    left: 68%;
 }
 .can .and_img .jq_txt{
-    left: 80%;
+    left: 80.5%;
 }
 .can .and_img .fg_txt{
-    left: 91.5%;
+    left: 93%;
 }
 
 /* 비디오 서식 */
@@ -370,28 +371,44 @@ nav .opening{
 .reel_video{
     width: 1310px;
     height: 737px;
-    background-color: #333;
-    margin: 0px auto;
-}
-.reel_sub{
-    width: 1310px;
-    height: 480px;
     background-color: #F8CECE;
     margin: 0px auto;
-    border-radius: 0px 0px 70px 70px;
+    position: relative;
 }
 .reel_title2{
     font-size: 64px;
     text-align: center;
     font-family: 'Do Hyeon', sans-serif;
     margin-bottom: 60px;
-    
+    position: absolute;
+    top: 5%;
+    left: 68%;
 }
 .sub_txt{
     font-size: 32px;
     font-family: 'Do Hyeon', sans-serif;
     text-align: center;
     line-height: 62px;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+.reel_btn a{
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Do Hyeon', sans-serif;
+    top: 64%;
+    left: 68%;
+    border: 2px solid #425a73;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: #425a73;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.reel_btn:hover a{
+    background-color: #425a73;
+    color: #FAF6FF;
 }
 
 /* Other Video서식 */
@@ -410,6 +427,7 @@ nav .opening{
     display: flex;
     margin: 0px auto;
     justify-content: space-around;
+    position: relative;
 }
 
 .other_video img{
@@ -428,6 +446,45 @@ nav .opening{
     transform: scale(1.2);
 
 }
+.other_video p{
+    position: absolute;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 24px;
+    color: #435B74;
+    transition: 0.4s;
+    transform: translateY(-150px);
+}
+.other_video .other_txt1{
+    top: 92%;
+    left: 11%;    
+}
+.other_video .other_txt2{
+    top: 92%;
+}
+.other_video .other_txt3{
+    top: 92%;
+    left: 79%;
+}
+.other_show1{
+    top: 32%!important;
+}
+.other_show2{
+    top: 180%!important;
+}
+.other_video .other_txt4{
+    top: 150%;
+    left: 13%;
+}
+.other_video .other_txt5{
+    top: 150%;
+    left: 45%;
+}
+.other_video .other_txt6{
+    top: 150%;
+    left: 78%;
+}
+
+
 
 /* 일러스트서식 */
 .illust{
@@ -447,7 +504,32 @@ nav .opening{
     text-align: center;
     color: #435B74;
     font-family: 'Nanum Myeongjo', serif;
-    margin: 150px 0px 150px 0px;
+    margin: 100px 0px 200px 0px;
+}
+.illust_txt{
+    text-align: center;
+    color: #435B74;
+    transform: translateY(-180px);
+}
+.illust_ex{
+    font-family: 'Nanum Myeongjo', serif;
+    color: #333;
+    text-align: center;
+    font-size: 64px;
+    position: absolute;
+    
+}
+.illust_city{
+    left: 45%;
+    top: 5.6%;
+}
+.illust_lp{
+    top: 39%;
+    left: 48%;
+}
+.illust_window{
+    top: 73%;
+    left: 42.5%;
 }
 .illust1{
     width: 1300px;
@@ -516,12 +598,13 @@ nav .opening{
     left: 0%;
 }
 .rehau_blur{
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
 }
 .rehau_blur:hover{
-    opacity: 1;
+    transform: scale(1.05);
 }
+
 .rehau_txt1{
     font-size: 64px;
     font-family: 'Do Hyeon', sans-serif;
@@ -636,9 +719,9 @@ nav .opening{
 /* 푸터서식 */
 .footer_box{
     width: 100%;
-    height: 400px;
+    height: 120px;
     background-color: #E6D4FE;
-    margin-top: 12600px;
+    margin-top: 12000px;
     position: relative;
 }
 .footer_txt{
@@ -650,24 +733,24 @@ nav .opening{
 .footer_txt2{
     font-size: 24px;
     position: absolute;
-    top: 70%;
+    top: 23%;
     right: 3%;
     text-align: right;
     font-family: 'Nanum Myeongjo', serif;
     color: #425a73;
 }
 .footer_you{
-    width: 150px;
+    width: 70px;
     position: absolute;
-    left: 40%;
-    top: 30%;
+    left: 45%;
+    top: 24%;
     transition: 0.3s;
 }
 .footer_git{
-    width: 150px;
+    width: 70px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 24%;
     transition: 0.3s;
 }
 .footer_you:hover,.footer_git:hover{

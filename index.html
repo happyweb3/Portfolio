@@ -97,7 +97,6 @@
             <a href="#other" class="scroll_move">Other</a>
             <a href="#illust" class="scroll_move">illust</a>
             <a href="#rehau" class="scroll_move">web</a>
-            <a href="#footer" class="scroll_move">Footer</a>
             </div>
         </article>
         </div>
@@ -105,7 +104,7 @@
         <article class="profile" id="profile">
             <h2>WHO AM I</h2>
             <div class="box01"></div>
-            <!-- <img src="./img/i.png" alt="my picture"> -->
+            <img src="./img/i.png" alt="my picture">
             <div class="p_txt">
             <p>이름 : 김기태<br>
                 나이 : 19세<br>
@@ -192,38 +191,56 @@
         <article class="reel" id="reel">
             <h2 class="reel_title">REEL</h2>
             <div class="reel_video">
-                <iframe width="1310" height="737" src="https://www.youtube.com/embed/2v3RgzBOTkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="650" height="737" src="https://www.youtube.com/embed/2v3RgzBOTkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    <p class="reel_title2">릴 영상</p>
+                    <p class="sub_txt">직접만든 영상들을 하나로 합쳐놓은 영상이다. <br>
+                        모든 영상들을 넣은것은 아니지만  대부분 가장 <br>
+                        잘 만들었다 생각되는 영상들로 구성되어있다.<br><br><br><br><br>
+                        
+                        제작기간 :  2020.1 ~ 2022.11
+                        </p>
+                        <div class="reel_btn"><a href="https://www.youtube.com/watcsh?v=2v3RgzBOTkQ">유튜브로 보기</a></div>
+                
             </div>
 
-            <div class="reel_sub">
-                <p class="reel_title2">릴 영상</p>
-                <p class="sub_txt">직접만든 영상들을 하나로 합쳐놓은 영상이다. <br>
-                    모든 영상들을 넣은것은 아니지만  대부분 가장 <br>
-                    잘 만들었다 생각되는 영상들로 구성되어있다.<br><br>
-
-                    제작기간 :  2020.1 ~ 2022.11
-                    </p>
-            </div>
+            
             
         </article>
 
         <article class="other" id="other">
             <h2 class="other_title">Other Video</h2>
             <div class="other_video">
-                <a href="https://www.youtube.com/watch?v=9DMvcsPD0vw"><img src="./img/vd3.jpg" alt=""></a>
-                <a href="https://www.youtube.com/watch?v=wpQZ4KVW3r4"><img src="./img/vd2.jpg" alt=""></a>
-                <a href="https://www.youtube.com/watch?v=I4qCujWMBUE"><img src="./img/vd1.jpg" alt=""></a>
+
+                <p class="other_txt1">타이포그래피 | 1:14</p>
+                <a href="https://www.youtube.com/watch?v=9DMvcsPD0vw"><img src="./img/vd3.jpg" alt="" class="other_img1"></a>
+
+                <p class="other_txt2">타이포그래피 | 0:13</p>
+                <a href="https://www.youtube.com/watch?v=wpQZ4KVW3r4"><img src="./img/vd2.jpg" alt="" class="other_img2"></a>
+
+                <p class="other_txt3">VLOG | 1:36</p>
+                <a href="https://www.youtube.com/watch?v=I4qCujWMBUE"><img src="./img/vd1.jpg" alt="" class="other_img3"></a>
             </div>
 
             <div class="other_video other_video2">
-                <a href="https://www.youtube.com/watch?v=miYTzILwASA"><img src="./img/vd6.jpg" alt=""></a>
-                <a href="https://www.youtube.com/watch?v=miYTzILwASA"><img src="./img/vd5.jpg" alt=""></a>
-                <a href="https://www.youtube.com/watch?v=WayhTCcJKHU"><img src="./img/vd4.jpg" alt=""></a>
+
+                <p class="other_txt4">게임 | 3:56</p>
+                <a href="https://www.youtube.com/watch?v=3tUyT0DC0-w"><img src="./img/vd6.jpg" alt="" class="other_img4"></a>
+
+                <p class="other_txt5">모션그래픽 | 1:15</p>
+                <a href="https://www.youtube.com/watch?v=miYTzILwASA"><img src="./img/vd5.jpg" alt="" class="other_img5"></a>
+
+                <p class="other_txt6">모션그래픽 | 0:19</p>
+                <a href="https://www.youtube.com/watch?v=WayhTCcJKHU"><img src="./img/vd4.jpg" alt="" class="other_img6"></a>
             </div>
         </article>
 
         <article class="illust" id="illust">
             <h2 class="illust_title">Illustrator</h2>
+            <p class="illust_txt">일러스트레이터를 사용해 직접 그린 일러스트</p>
+            <p class="illust_city illust_ex">CITY</p>
+            <p class="illust_lp illust_ex">LP</p>
+            <p class="illust_window illust_ex">Window</p>
             <img src="./img/graident.png" alt="" class="il_background">
             <img src="./img/illust1.jpg" alt="" class="illust1">
             <img src="./img/illust3.JPG" alt="" class="illust2">
@@ -353,9 +370,24 @@
     const icon2=document.querySelector('.other_logo2');
     const icon3=document.querySelector('.other_logo3');
 
+    const other1=document.querySelector('.other_video .other_txt1');
+    const other2=document.querySelector('.other_video .other_txt2');
+    const other3=document.querySelector('.other_video .other_txt3');
+    const other4=document.querySelector('.other_video .other_txt4');
+    const other5=document.querySelector('.other_video .other_txt5');
+    const other6=document.querySelector('.other_video .other_txt6');
+
+
     const img=document.querySelector('.other_web .ssuni');
     const img2=document.querySelector('.other_web .animal');
     const img3=document.querySelector('.other_web .kully');
+
+    const other_img1=document.querySelector('.other_video .other_img1')
+    const other_img2=document.querySelector('.other_video .other_img2')
+    const other_img3=document.querySelector('.other_video .other_img3')
+    const other_img4=document.querySelector('.other_video .other_img4')
+    const other_img5=document.querySelector('.other_video .other_img5')
+    const other_img6=document.querySelector('.other_video .other_img6')
 
     img.addEventListener('mouseover',function(){
         icon.classList.add('show')
@@ -377,6 +409,50 @@
     img3.addEventListener('mouseout',function(){
         icon3.classList.remove('show')
     })
+    
+    // other서식
+    other_img1.addEventListener('mouseover',function(){
+        other1.classList.add('other_show1')
+    })
+    other_img1.addEventListener('mouseout',function(){
+        other1.classList.remove('other_show1')
+    })
+
+    other_img2.addEventListener('mouseover',function(){
+        other2.classList.add('other_show1')
+    })
+    other_img2.addEventListener('mouseout',function(){
+        other2.classList.remove('other_show1')
+    })
+
+    other_img3.addEventListener('mouseover',function(){
+        other3.classList.add('other_show1')
+    })
+    other_img3.addEventListener('mouseout',function(){
+        other3.classList.remove('other_show1')
+    })
+    
+    other_img4.addEventListener('mouseover',function(){
+        other4.classList.add('other_show2')
+    })
+    other_img4.addEventListener('mouseout',function(){
+        other4.classList.remove('other_show2')
+    })
+
+    other_img5.addEventListener('mouseover',function(){
+        other5.classList.add('other_show2')
+    })
+    other_img5.addEventListener('mouseout',function(){
+        other5.classList.remove('other_show2')
+    })
+
+    other_img6.addEventListener('mouseover',function(){
+        other6.classList.add('other_show2')
+    })
+    other_img6.addEventListener('mouseout',function(){
+        other6.classList.remove('other_show2')
+    })
+
     
 </script>
 </body>
